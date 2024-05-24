@@ -1,0 +1,31 @@
+{
+  "name": "tracking-hours-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/tracking-hours-backend/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "tracking-hours-backend:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "tracking-hours-backend:build:development"
+        },
+        "production": {
+          "buildTarget": "tracking-hours-backend:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/tracking-hours-backend/jest.config.ts"
+      }
+    }
+  }
+}
