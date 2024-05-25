@@ -4,7 +4,10 @@
   "license": "MIT",
   "scripts": {
     "start:frontend": "nx serve tracking-hours-frontend",
-    "start:backend": "nx serve tracking-hours-backend"
+    "start:backend": "nx serve tracking-hours-backend",
+    "start:backend:build": "nx build tracking-hours-backend",
+    "start:backend:prod": "node dist/apps/tracking-hours-backend/main.js",
+    "start": "node dist/apps/tracking-hours-backend/main.js"
   },
   "private": true,
   "devDependencies": {
