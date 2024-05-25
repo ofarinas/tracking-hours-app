@@ -1,4 +1,6 @@
-# Org
+# Deployment in Backend
+
+https://railway.app/project/7c0b4c1b-53f3-4a52-9549-b6319a7c290d/service/5330684d-b7aa-43fe-b6fe-4760787c79a3
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -28,9 +30,11 @@ npx nx serve demo
 npx nx show project demo --web
 ```
 
-Run `npx nx list` to get a list of available plugins and whether they have generators. Then run `npx nx list <plugin-name>` to see what generators are available.
+Run `npx nx list` to get a list of available plugins and whether they have generators. Then
+run `npx nx list <plugin-name>` to see what generators are available.
 
-Learn more about [code generators](https://nx.dev/features/generate-code) and [inferred tasks](https://nx.dev/concepts/inferred-tasks) in the docs.
+Learn more about [code generators](https://nx.dev/features/generate-code)
+and [inferred tasks](https://nx.dev/concepts/inferred-tasks) in the docs.
 
 ## Running tasks
 
@@ -52,7 +56,8 @@ npx nx run-many -t <target1> <target2>
 npx nx run-many -t <target1> <target2> -p <proj1> <proj2>
 ```
 
-Targets can be defined in the `package.json` or `projects.json`. Learn more [in the docs](https://nx.dev/features/run-tasks).
+Targets can be defined in the `package.json` or `projects.json`. Learn
+more [in the docs](https://nx.dev/features/run-tasks).
 
 ## Set up CI!
 
