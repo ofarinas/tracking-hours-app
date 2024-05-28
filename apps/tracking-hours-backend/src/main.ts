@@ -14,8 +14,10 @@ const port = process.env.PORT || 3000;
 Logger.log(
   `🚀 Application is running on: http://localhost:${port}/${globalPrefix}`
 );
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   app.setGlobalPrefix(globalPrefix);
   await app.listen(port);
 }
