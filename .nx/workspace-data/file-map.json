@@ -1,0 +1,371 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.2.1",
+  "deps": {
+    "@angular/animations": "18.0.1",
+    "@angular/cdk": "18.0.1",
+    "@angular/common": "18.0.1",
+    "@angular/compiler": "18.0.1",
+    "@angular/core": "18.0.1",
+    "@angular/forms": "18.0.1",
+    "@angular/material": "18.0.1",
+    "@angular/platform-browser": "18.0.1",
+    "@angular/platform-browser-dynamic": "18.0.1",
+    "@angular/router": "18.0.1",
+    "@nestjs/common": "^10.0.2",
+    "@nestjs/core": "^10.0.2",
+    "@nestjs/mongoose": "^10.0.6",
+    "@nestjs/platform-express": "^10.0.2",
+    "@typescript-eslint/utils": "^8.0.0-alpha.20",
+    "axios": "^1.6.0",
+    "bootstrap": "^5.3.3",
+    "mongodb": "^6.6.2",
+    "mongoose": "^8.4.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "18.0.2",
+    "@angular-devkit/core": "18.0.2",
+    "@angular-devkit/schematics": "18.0.2",
+    "@angular-eslint/eslint-plugin": "18.0.1",
+    "@angular-eslint/eslint-plugin-template": "18.0.1",
+    "@angular-eslint/template-parser": "18.0.1",
+    "@angular/cli": "~18.0.0",
+    "@angular/compiler-cli": "18.0.1",
+    "@angular/language-service": "18.0.1",
+    "@nestjs/schematics": "^10.0.1",
+    "@nestjs/testing": "^10.0.2",
+    "@nx/angular": "19.2.1",
+    "@nx/devkit": "19.2.1",
+    "@nx/eslint": "19.2.1",
+    "@nx/eslint-plugin": "19.2.1",
+    "@nx/jest": "19.2.1",
+    "@nx/js": "19.2.1",
+    "@nx/nest": "19.2.1",
+    "@nx/node": "19.2.1",
+    "@nx/playwright": "19.2.1",
+    "@nx/web": "19.2.1",
+    "@nx/webpack": "19.2.1",
+    "@playwright/test": "^1.36.0",
+    "@schematics/angular": "18.0.2",
+    "@swc-node/register": "1.9.1",
+    "@swc/core": "1.5.7",
+    "@swc/helpers": "0.5.11",
+    "@types/jest": "^29.4.0",
+    "@types/node": "18.16.9",
+    "@typescript-eslint/eslint-plugin": "^7.3.0",
+    "@typescript-eslint/parser": "^7.3.0",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-playwright": "^0.15.3",
+    "jest": "^29.4.1",
+    "jest-environment-jsdom": "^29.4.1",
+    "jest-environment-node": "^29.4.1",
+    "jest-preset-angular": "14.1.0",
+    "nx": "19.2.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "~5.4.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    }
+  ],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "15629280613521941793"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "12090634411749185289"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "3395189204293871444"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "17425123947026961272"
+      },
+      {
+        "file": "README.md",
+        "hash": "14775944877836837406"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "17816267192431239105"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5991782832039612958"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3093232271330057470"
+      },
+      {
+        "file": "package.json",
+        "hash": "11802123183816758578"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      }
+    ],
+    "projectFileMap": {
+      "tracking-hours-frontend-e2e": [
+        {
+          "file": "apps/tracking-hours-frontend-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/tracking-hours-frontend-e2e/playwright.config.ts",
+          "hash": "3386806080284977562"
+        },
+        {
+          "file": "apps/tracking-hours-frontend-e2e/project.json",
+          "hash": "16606601360712590521"
+        },
+        {
+          "file": "apps/tracking-hours-frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        },
+        {
+          "file": "apps/tracking-hours-frontend-e2e/tsconfig.json",
+          "hash": "2800721902587063983"
+        }
+      ],
+      "tracking-hours-backend": [
+        {
+          "file": "apps/tracking-hours-backend/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/tracking-hours-backend/jest.config.ts",
+          "hash": "14984582168370499130"
+        },
+        {
+          "file": "apps/tracking-hours-backend/project.json",
+          "hash": "8197719863182819803"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/app/app.module.ts",
+          "hash": "14602055737569756934"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/app/controllers/user.controller.ts",
+          "hash": "899423655033018813"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/app/repositories/user.repository.ts",
+          "hash": "2966997232116315656"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/app/schemas/user.ts",
+          "hash": "6096710334722963139"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/app/services/user.service.ts",
+          "hash": "13047772601687063457"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tracking-hours-backend/src/main.ts",
+          "hash": "13804521572254374146"
+        },
+        {
+          "file": "apps/tracking-hours-backend/tsconfig.app.json",
+          "hash": "3171572500325445971"
+        },
+        {
+          "file": "apps/tracking-hours-backend/tsconfig.json",
+          "hash": "3490524966360018312"
+        },
+        {
+          "file": "apps/tracking-hours-backend/tsconfig.spec.json",
+          "hash": "11550347367511341917"
+        },
+        {
+          "file": "apps/tracking-hours-backend/webpack.config.js",
+          "hash": "16893047824162120206"
+        }
+      ],
+      "tracking-hours-frontend": [
+        {
+          "file": "apps/tracking-hours-frontend/.eslintrc.json",
+          "hash": "3322449398258820698"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/jest.config.ts",
+          "hash": "11580214626589741797"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/project.json",
+          "hash": "13920338882834448006"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/app.component.ts",
+          "hash": "11377972321436774096"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/app.config.ts",
+          "hash": "10618457967269332155"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/app.routes.ts",
+          "hash": "11541664769496157461"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/components/login/login.component.css",
+          "hash": "17741632626741792319"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/components/login/login.component.html",
+          "hash": "576709309115651747"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/components/login/login.component.spec.ts",
+          "hash": "15200146559264946551"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/app/components/login/login.component.ts",
+          "hash": "1073023668307821137"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/index.html",
+          "hash": "13091226910519885652"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/main.ts",
+          "hash": "16635586463787978962"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/tsconfig.app.json",
+          "hash": "8365644956319658761"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/tsconfig.editor.json",
+          "hash": "1055794200401717100"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/tsconfig.json",
+          "hash": "14845187541790154013"
+        },
+        {
+          "file": "apps/tracking-hours-frontend/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "tracking-hours-backend-e2e": [
+        {
+          "file": "apps/tracking-hours-backend-e2e/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/jest.config.ts",
+          "hash": "63301283394439963"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/project.json",
+          "hash": "15894276015873929425"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/src/support/global-setup.ts",
+          "hash": "2568409276037275290"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/src/support/global-teardown.ts",
+          "hash": "5275447082211835490"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/src/support/test-setup.ts",
+          "hash": "10984585515912236441"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/src/tracking-hours-backend/tracking-hours-backend.spec.ts",
+          "hash": "110394728024017389"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/tsconfig.json",
+          "hash": "15443990093475294480"
+        },
+        {
+          "file": "apps/tracking-hours-backend-e2e/tsconfig.spec.json",
+          "hash": "14954872453723519891"
+        }
+      ]
+    }
+  }
+}
