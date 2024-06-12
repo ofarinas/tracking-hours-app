@@ -9,16 +9,14 @@ export class UserController {
   }
 
   @Post('create')
-  async createUser(@Body() body: { name: string }): Promise<User> {
-    Logger.log('name', body.name);
-    console.log('name', body.name);
-    return this.userService.createUser(body.name);
+  async createUser(@Body() body: { user: string, password: string }) {
+    Logger.log('name', body.user);
+    console.log('name', body.user);
+    return this.userService.createUser(body.user, body.password);
   }
 
-  @Get('find')
-  async findUserByEmail(@Query('name') name: string): Promise<User | null> {
-
-
-    return this.userService.findUserByEmail(name);
+  @Get('login')
+  async login(@Query('user') user: string, @Query('password') password: string) {
+    return this.userService.login(user, password);
   }
 }

@@ -7,6 +7,9 @@ export type CatDocument = HydratedDocument<User>;
 export class User {
   @Prop()
   name: string;
+
+  @Prop()
+  password: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

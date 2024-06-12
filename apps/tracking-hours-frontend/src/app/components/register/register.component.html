@@ -2,14 +2,14 @@
   <h1 class="padd-bottom">Login</h1>
   <div class="padd-bottom">
     <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input [(ngModel)]="user" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <input type="email" [(ngModel)]="user" class="form-control" id="exampleFormControlInput1"
+           placeholder="name@example.com">
   </div>
   <div class="padd-bottom">
     <label for="inputPassword5" class="form-label">Password</label>
     <input type="password" [(ngModel)]="password" id="inputPassword5" class="form-control"
            aria-describedby="passwordHelpBlock">
   </div>
-  <button type="button" class="btn btn-primary" (click)="login(user,password)">Login</button>
+  <button type="button" class="btn btn-primary" (click)="register(user,password)">Create User</button>
 </div>
-
 
